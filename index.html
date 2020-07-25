@@ -8,6 +8,7 @@
 		<meta name ="viewport" content = "width=device-width,initial-scale=1">
 
 		<title>IsmaGames</title>
+		<script src="https://kit.fontawesome.com/1a5e1b48ba.js" crossorigin="anonymous"></script>
 		<link rel="short icon" href="img/favicon.svg">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -16,72 +17,72 @@
 	<body>
 		<header>
 			<div class = "container">
-				<a href="index.html"> <img src="img/logo.svg"> </a>
+				<a href="index.html" > <img src="img/logo.svg" class="logo"> </a>
 				<nav>
-					<a href="#inicio">INICIO</a>
+					<a href="#inicio">HOME</a>
 					<a href="#games">GAMES</a>
-					<a href="#nosotros">NOSOTROS</a>
-					<a href="#galeria">GALERIA</a>
-					<a href="#contacto">CONTACTO</a>
+					<a href="#nosotros">ABOUT</a>
+					<a href="#galeria">GALLERY</a>
+					<a href="#contacto">CONTACT</a>
 				</nav>
+				<a href="#" class="hambur"><i class="fas fa-bars"></i></a>
 			</div>
 		</header>
 
 		<main>
 			<section id="inicio">
-				<img src="img/inicio.png">
-				<div class = "container">
-					<h1> IsmaGames! </h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
-					<a href="#nosotros">Conoce más</a>
+				<img src="img/bannerprincipal1.svg">
+				<div class = "container bloque-banner">
+					<h1>IsmaGames!</h1>
+					<p>We make games and interactive experiences</p>
+					<a href="#nosotros" class="boton boton-blanco">Lern more</a>
 				</div>
 			</section>
 			
-			<section id="nosotros">
-				<div class = "container">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. </p>
-					
+			<section id="nosotros" >
+				<div class ="section">
+					<div class = "container">
+						<h1>About</h1>
+						<p>IsmaGames was created by Ismael LB a small indie dev who wants to make games and enjoy developing. I'm passionate about creating things; to see how my work comes to life and programming gives me just that. This feeling of crating products and experiences that others can interact with and enjoy that's what motivates me.</p>
+						<p>I started this journey around 2 years ago when I was about to graduate from high school, self-learning about programming and game dev. I find this world amazing and start investing more time in it. Enjoy my work!</p>
+					</div>
 				</div>
 				<div>
-					<iframe class="embed" src="https://editor.p5js.org/IsmaelLB/embed/TpSNzL5OC"></iframe>
+					<iframe class="embed" src="https://editor.p5js.org/IsmaelLB/embed/TpSNzL5OC" onmouseover="this.contentWindow.focus();"></iframe>
 				</div>
-
 			</section>
 
-			<section id="games">
+			<section id="games" class="section">
 				<div class = "container">
-					<h1>Games made by us</h1>
+					<h1>Games</h1>
 					<div class = "row">
-						<div class="col">
-							<div>
-								<div> <img src="img/minesweeper.png"></div>
-								<div>
+						<div class="col col-33 col-mobile-100 col-tablet-50">
+							<div class="bloque-game">
+								<div class="img-game"> <img src="img/minesweeper.png"></div>
+								<div class="contenido-game">
 									<h3>MineSeWeeper!</h3>
 									<p>The Classic MineSweeper for movile devices</p>
+									<p class="more">-> <a href="https://play.google.com/store/apps/details?id=com.IsmaLB.Bucaminas&hl=en_US" target="_blank">More!</a></p>
 								</div>
-								<a href='https://play.google.com/store/apps/details?id=com.IsmaLB.Bucaminas&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 							</div>
 						</div>
-						<div class="col">
-							<div>
-								<div> <img src="img/burrow.png"></div>
-								<div>
+						<div class="col col-33 col-mobile-100 col-tablet-50">
+							<div class="bloque-game">
+								<div class="img-game"> <img src="img/burrow.png"></div>
+								<div class="contenido-game">
 									<h3>Burrow</h3>
 									<p>What's a burrow? You shoud play this small game made during a game jam</p>
+									<p class="more">-> <a href="https://ismagames.itch.io/burrow" target="_blank">More!</a></p>
 								</div>
-								<iframe frameborder="0" src="https://itch.io/embed-upload/1982270?color=000000" allowfullscreen="" width="980" height="688"><a href="https://ismagames.itch.io/burrow">Play BURROW on itch.io</a></iframe>
 							</div>
 						</div>
-						<div class="col">
-							<div>
-								<div> <img src="img/keepdistance.png"></div>
-								<div>
+						<div class="col col-33 col-mobile-100 col-tablet-50">
+							<div class="bloque-game">
+								<div class="img-game"> <img src="img/keepdistance.png"></div>
+								<div class="contenido-game">
 									<h3>Keep Distance!</h3>
 									<p>Try to keep distance while hepling others</p>
+									<p class="more">-> <a href="https://ismagames.itch.io/keep-distance" target="_blank">More!</a></p>
 								</div>
 							</div>
 						</div>
@@ -89,92 +90,78 @@
 				</div>				
 			</section>
 			
-			<section id="galeria">
+			<section id="galeria" class="section">
 				<div class = "container-fluid">
 					<div class = "row">
-						<div class="col">
-							<div>
+						<div class="col col-33 col-mobile-50">
+							<div class="cuadrado-perfecto">
 								<img src="img/galeria1.png">
-								<h3>Foto1</h3>
+								<h3>Hey</h3>
 							</div>
 						</div>
-						<div class="col">
-							<div>
+						<div class="col col-33 col-mobile-50">
+							<div class="cuadrado-perfecto">
 								<img src="img/galeria2.png">
-								<h3>Foto2</h3>
+								<h3>do</h3>
 							</div>
 						</div>
-						<div class="col">
-							<div>
-								<img src="img/galeria3.png">
-								<h3>Foto3</h3>
+						<div class="col col-33 col-mobile-50">
+							<div class="cuadrado-perfecto">
+								<img src="img/galeria3.jpg">
+								<h3>you</h3>
 							</div>
 						</div>
-						<div class="col">
-							<div>
-								<img src="img/galeria4.png">
-								<h3>Foto4</h3>
+						<div class="col col-33 col-mobile-50 pixel-art">
+							<div class="cuadrado-perfecto">
+								<img src="img/galeria4.gif">
+								<h3>want</h3>
 							</div>
 						</div>
-						<div class="col">
-							<div>
+						<div class="col col-33 col-mobile-50">
+							<div class="cuadrado-perfecto">
 								<img src="img/galeria5.png">
-								<h3>Foto5</h3>
+								<h3>more</h3>
 							</div>
 						</div>
-						<div class="col">
-							<div>
-								<img src="img/galeria6.png">
-								<h3>Foto6</h3>
+						<div class="col col-33 col-mobile-50 pixel-art">
+							<div class="cuadrado-perfecto">
+								<img src="img/galeria6.gif">
+								<h3>?</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="contacto">
+			<section id="contacto" class="section">
 				<div class = "container">
-					<h1>Contact Us</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis.</p>
+					<h1>Contact</h1>
+					<h4>We want to hear from you! Please send us an email: <a href="mailto:contact.ismagames@gmail.com">contact.ismagames@gmail.com</a></h4>
 				</div>
 			</section>
 			
 			<footer>
 				<div class="container">
 					<div class="row"> 
-						<div class="col">
-							<img src="img/logo2.png">
-							<p>Contacta con nosotros</p>
+						<div class="col col-50">
+							<a class="home-bt" href="index.html"><img src="img/logotransparente.svg" class="logo"></a>
 						</div>
-						<div class="col">
-							<h3>Temas Relacionados</h3>
-							<ul>
-								<li><a href="#">Enlace1</a></li>
-								<li><a href="#">Enlace2</a></li>
-								<li><a href="#">Enlace3</a></li>
-								<li><a href="#">Enlace4</a></li>
-							</ul>
-						</div>
-						<div class="col">
-							<h3>Temas Relacionados2</h3>
-							<ul>
-								<li><a href="#">Enlace1</a></li>
-								<li><a href="#">Enlace2</a></li>
-								<li><a href="#">Enlace3</a></li>
-								<li><a href="#">Enlace4</a></li>
-							</ul>
+						
+						<div class="col col-50 redes">
+							<!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a> -->
+							<a href="https://ismagames.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+							<div class="pie">
+								&copy; All Rights Reserved
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container">
-					<div>
-						&copy; Todos los derechos reservados
-					</div>
-				</div>
-			</footer>
+			</footer> 
 
 		</main>
+		<script src="js/jquery.js"></script>
+		<script src="js/funciones.js"></script>
 	</body>
 </html>

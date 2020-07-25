@@ -1,9 +1,58 @@
 *{
 	box-sizing: border-box;
-}
 
+}
 body{
 	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+	cursor: url(img/cursor.png),auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #d4d4d4; 
+}
+::-webkit-scrollbar-thumb {
+  background: #949494; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6e6e;
+}
+
+a{
+	color: #9dcc25;
+	text-decoration: none;
+	cursor: url("img/cursor-click.png"),auto;
+}
+header{
+	padding: 0 25 0 25;
+	background-color: #173d80;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+header .hambur{
+	display: none;
+}
+header .logo{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+header .container nav a {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+header a{
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .container{
@@ -11,22 +60,379 @@ body{
 	width: 1140px;
 	margin: 0 auto 0 auto;
 }
-
+.logo{
+	width:  100px;
+	height: auto;
+} 
 .embed{
 	width: 100%;
-	height: 600px;
-	margin: 0 auto 0 auto;
+	height: 70vh;
+	margin: 0;
 	border: none;
+	display: block;
+	cursor: wait;
+}
+.pixel-art{
+	image-rendering: pixelated;
+}
+.boton{
+	padding: 10px 25px 10px 25px;
+	display: inline-block;
+}
+.boton.boton-blanco{
+	background-color: #9dcc25;
+	color: #fff;
+	border-radius: 5px;
 }
 .container-fluid{
 	padding: 0 15px 0 15px;
 	width: 100%;
 }
-
-.row{
-	padding: 0 15px 0 15px;
+.section{
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
-
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 .col{
 	padding: 0 15px 0 15px;
+}
+.col-33{
+	width: 33.33%
+}
+.col-50{
+	width: 50%;
+}
+.cuadrado-perfecto{
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+#inicio{
+	position: relative;
+	background-color: black;
+}
+#inicio img {
+	width: 100%;
+	opacity: 0.9;
+	display: block;
+}
+#inicio .bloque-banner{
+	position: absolute;
+	width: 33.33%;
+	margin-left: -16.66%;
+	margin-top: ;
+	top: 40%;
+	left: 50%;
+	text-align: center;
+	color: #fff;
+}
+#inicio .bloque-banner h1{
+	font-size: 60px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#nosotros{
+	text-align: justify;
+	background-color: #9dcc25;
+}
+
+#games {
+	background-color: #9dcc25;
+}
+#games .col{
+	display: flex;
+}
+#games .bloque-game{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	border-style: none solid solid solid;
+	border-width: 1px;
+	border-color: #5d800480;
+	border-radius: 0px 0px 5px 5px;
+	padding-bottom: 15px;
+}
+#games .bloque-game .img-game{
+	width: 100%;
+	height: 60%;
+}
+
+#games .bloque-game .img-game img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#games .bloque-game .contenido-game{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 0px 15px 0px 15px;
+}
+
+#games .bloque-game .contenido-game h3{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#games .bloque-game .contenido-game p{
+	margin: 0px;
+}
+#games .bloque-game .contenido-game a{
+	color: black;
+	text-decoration: underline;
+}
+#games .bloque-game .contenido-game .more{
+	align-self: flex-end;
+	width: 100%;
+	text-align: right;
+	margin-bottom: 0px;
+}
+#galeria {
+	background-color: #173d80;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#galeria .container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#galeria .cuadrado-perfecto img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+	position: absolute;
+	opacity: 0.6;
+	transition: all .2s ease-in;
+}
+#galeria .cuadrado-perfecto:hover img{
+	opacity: 1;
+}
+
+#galeria .cuadrado-perfecto h3{
+	position: absolute;
+	top: -5%;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+#galeria .cuadrado-perfecto:hover h3{
+	opacity: 1;
+	top:0%;
+}
+#galeria .col{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#contacto{
+	background-color: #cc3c25;
+}
+
+footer{
+	background: #173d80;
+	color: #9dcc25;
+}
+footer .col{
+	padding: 20px 0px 20px 0px;
+}
+footer .redes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-left: 0px;
+	padding-right: 0px
+}
+footer .redes a{
+	font-size: 30px;
+	margin-left: 30px;
+}
+footer .redes .pie{
+	width: 100%;
+	align-self: flex-end;
+	text-align: right;
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+	.container{
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#inicio .bloque-banner{
+		width: 80%;
+		margin-left: -40%;
+	}
+	.section{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.container{
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.section{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	.col-tablet-50{
+		width: 50%;
+	}
+	
+	header .container nav a{
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 18px;
+	}
+	#inicio .bloque-banner{
+		width: 80%;
+		margin-left: -40%;
+	}
+	#games .col-tablet-50{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 767px){
+	
+	body{
+		font-size: 14px;
+	}
+	.container{
+		width: 100%;
+	}
+	.section{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.embed{
+		height: 90vh;
+	}
+	.logo{
+		width: 80px;
+	}
+	.col-mobile-100{
+		width: 100%;
+	}
+	.col-mobile-50{
+		width: 50%;
+	}
+	
+	header{
+		transition: padding .3s ease-out;
+	}
+	header .container .hambur{
+		display: block;
+		font-size: 30px;
+		z-index: 3;
+	}
+	header .logo{
+		position: relative;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		z-index: 3;
+	}
+	header .container nav{
+		display: none;
+		position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    background: #173d80;
+	    top: 0px;
+	    left: 100%;
+	    z-index: 2;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+	    justify-content: space-between;
+	    padding-top: 30vh;
+	    padding-bottom: 15vh;
+	    transition: transform .5s ease-in-out;
+	}
+	header .container nav.open{
+		transform: translateX(-100%);
+	}
+	header .container .hambur i{
+		transition: margin .3s ease-out;
+	}
+	header .container .hambur i.fa-times{
+		position: fixed;
+		right: 15px;
+		top: 20px;
+	}
+	header.open{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		z-index: 2;
+	}
+	header .container nav a{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	
+	#inicio .bloque-banner{
+		width:  100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: -50%;
+		top:20%;
+	}
+	#inicio .bloque-banner h1{
+		font-size: 30px;
+	}
+	#inicio .bloque-banner a{
+		display: none;
+	}
+	#games .col-mobile-100{
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 15px;
+	}
+	#galeria .cuadrado-perfecto h3{
+		font-size: 16px;
+	}
+	footer .col{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	footer .redes a{
+		font-size: 15px;
+		margin-left: 10px; 
+	}
+	footer .redes .pie{
+		font-size: 10px;
+	}
+}
+@media (orientation: landscape) and (max-width: 767px) {
+	.container{
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	#games .col-mobile-100{
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 15px;
+	}
+	#games .bloque-game .img-game{
+		height: 70%;
+	}
+	#inicio .bloque-banner a{
+		margin-top: 15px;
+		display: inline-block;
+	}
 }
