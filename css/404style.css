@@ -1,0 +1,33 @@
+body{
+	font-size: 36px;
+	font-weight: 400;
+	color: #9dcc25;
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+}
+samp.line{
+	display: inline-block;
+}
+main{
+	height: 100%;
+}
+#not-found{
+	background-color: #cc3c25;
+	height: 100%;
+}
+#not-found .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 100%;
+}
+#not-found .home{
+	width: 100%;
+	text-align: right;
+}
+@media (max-width: 767px){
+	body{
+		font-size: 20px;
+	}
+}
